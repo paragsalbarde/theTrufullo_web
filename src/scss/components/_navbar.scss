@@ -25,9 +25,11 @@
     .navbar-nav {
         .nav-item {
             .nav-link {
-                font-family: $headings-font-family;
+                // font-family: $headings-font-family;
+                font-family: $trufullo-font-family;
                 font-size: 0.95rem;
-                color: $white;
+                // color: $white;
+                color: $trufulloText;
                 letter-spacing: $headings-letter-spacing;
                 &.active,
                 &:hover {
@@ -51,7 +53,8 @@
             font-size: 1.5em;
             transition: font-size 0.3s ease-in-out;
             img {
-                height: 2rem;
+                // height: 2rem;
+                height: 3.5rem;
                 transition: height 0.3s ease-in-out;
             }
         }
@@ -59,12 +62,14 @@
         &.navbar-shrink {
             padding-top: 1rem;
             padding-bottom: 1rem;
-            background-color: $gray-900;
+            // background-color: $gray-900;
+            background-color: $white;
             .navbar-brand {
                 font-size: 1.25em;
                 svg,
                 img {
-                    height: 1.5rem;
+                    // height: 1.5rem;
+                    height: 2.5rem;
                 }
             }
         }

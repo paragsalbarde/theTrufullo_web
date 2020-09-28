@@ -1,10 +1,14 @@
 // Override Bootstrap color system
 
 $yellow: #fed136;
+$trufulloRed: #c7110d;
+$trufulloBlack: #2d2d2d;
 
 // Override Bootstrap default state colors
 
-$primary: $yellow;
+// $primary: $yellow;
+$primary: $trufulloRed;
+$trufulloText: $trufulloBlack;
 
 // Override Bootstrap yiq lightness value
 

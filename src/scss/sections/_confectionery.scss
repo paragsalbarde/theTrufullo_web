@@ -1,14 +1,14 @@
-// Styling for the portfolio section
-#portfolio {
-    .portfolio-item {
+// Styling for the confectionery section
+#confectionery {
+    .confectionery-item {
         max-width: 25rem;
         margin-left: auto;
         margin-right: auto;
-        .portfolio-link {
+        .confectionery-link {
             position: relative;
             display: block;
             margin: 0 auto;
-            .portfolio-hover {
+            .confectionery-hover {
                 display: flex;
                 position: absolute;
                 width: 100%;
@@ -18,28 +18,28 @@
                 justify-content: center;
                 opacity: 0;
                 transition: opacity ease-in-out 0.25s;
-                .portfolio-hover-content {
+                .confectionery-hover-content {
                     font-size: 1.25rem;
                     color: white;
                 }
             }
             &:hover {
-                .portfolio-hover {
+                .confectionery-hover {
                     opacity: 1;
                 }
             }
         }
-        .portfolio-caption {
+        .confectionery-caption {
             padding: 1.5rem;
             text-align: center;
             background-color: $white;
-            .portfolio-caption-heading {
+            .confectionery-caption-heading {
                 font-size: 1.5rem;
                 font-family: $headings-font-family;
                 font-weight: $headings-font-weight;
                 margin-bottom: 0;
             }
-            .portfolio-caption-subheading {
+            .confectionery-caption-subheading {
                 font-style: italic;
                 font-family: $subheadings-font-family;
             }
@@ -47,7 +47,7 @@
     }
 }
 
-.portfolio-modal {
+.confectionery-modal {
     .modal-dialog {
         margin: 1rem;
         max-width: 100vw;

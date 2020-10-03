@@ -1,4 +1,5 @@
 // Override Bootstrap typography variables
+@import 'https://fonts.googleapis.com/css2?family=Montserrat&family=ZCOOL+XiaoWei&display=swap';
 
 @import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
 
@@ -19,6 +20,7 @@ $font-family-script: "Kaushan Script", -apple-system, BlinkMacSystemFont,
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 $trufullo-font-family: 'ZCOOL XiaoWei', serif;
+$trufullo-family-base: 'Montserrat', sans-serif;
 
 $headings-font-weight: 700;
 $headings-letter-spacing: 0.0625em;

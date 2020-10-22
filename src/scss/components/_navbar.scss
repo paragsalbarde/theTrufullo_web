@@ -2,7 +2,8 @@
 #mainNav {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: $gray-900;
+    // background-color: $gray-900;
+    background-color: white;
     .navbar-toggler {
         padding: 0.75rem;
         font-family: $headings-font-family;
@@ -19,7 +20,8 @@
         letter-spacing: $headings-letter-spacing;
         text-transform: uppercase;
         img {
-            height: 1.5rem;
+            // height: 1.5rem;
+            height: 0rem;
         }
     }
     .navbar-nav {
@@ -50,11 +52,12 @@
         transition: padding-top 0.3s ease-in-out,
             padding-bottom 0.3s ease-in-out;
         .navbar-brand {
+            // font-size: 1.5em;
             font-size: 1.5em;
             transition: font-size 0.3s ease-in-out;
             img {
                 // height: 2rem;
-                height: 3.5rem;
+                height: 0rem;
                 transition: height 0.3s ease-in-out;
             }
         }

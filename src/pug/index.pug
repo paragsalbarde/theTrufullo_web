@@ -24,7 +24,13 @@ html(lang='en')
         link(href='css/styles.css', rel='stylesheet')
 
     body#page-top
-
+        div.wrapper
+            div.img-1
+                img( src="assets/img/parallax/bg00010.png")
+            div.img-2
+                img( src="assets/img/parallax/bg0009.png")
+            div.img-3
+                img( src="assets/img/parallax/bg0008.png")
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
             .container
@@ -36,8 +42,8 @@ html(lang='en')
                     ul.navbar-nav.text-uppercase.ml-auto
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#services') Services
-                        //- li.nav-item
-                        //-     a.nav-link.js-scroll-trigger(href='#confectionery') confectionery
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#confectionery') confectionery
                         //- //- li.nav-item
                         //-     a.nav-link.js-scroll-trigger(href='#about') About
                         //- li.nav-item
@@ -52,18 +58,15 @@ html(lang='en')
                 .masthead-subheading.text-uppercase Welcome To
                 .masthead-square
                     img.headerImage(src='assets/img/navbar-logo.svg', alt='')
-                //- .masthead-subheading  The
-                //- .masthead-subheading  Trufullo
-                //- .masthead-subheading  Patisserie
                 .masthead-heading.text-uppercase The Best Dessert Studio In The City
-                a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services') Tell Me More
+                a.btn.btn-outline-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services') Tell Me More
 
         // Services
         section#services.page-section
             .container
                 .text-center
-                    h2.section-heading.text-uppercase Services
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+                    h2.section-heading.text-uppercase We Serve
+                    h3.section-subheading.text-muted Choose from a wide range of designs for engagement cakes, kids birthday cakes, anniversary cakes and theme cakes apt for birthdays and corporate events
                 .row.text-center
                     .col-md-4
                         span.fa-stack.fa-4x
@@ -71,14 +74,14 @@ html(lang='en')
                             i.fas.fa-concierge-bell.fa-stack-1x.fa-inverse
                         h4.my-3 Customise Cakes
                         p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                            |  Available veriety of cake designs & customisation. Includeing from your favorite character to your passion.
                     .col-md-4
                         span.fa-stack.fa-4x
                             i.fas.fa-square.fa-stack-2x.text-primary
                             i.fas.fa-birthday-cake.fa-stack-1x.fa-inverse
                         h4.my-3 Cakes
                         p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                            | Trufullo is all about an entangled experience of layers, flavours and taste. Its our USP in a way. Click below to check 
                     .col-md-4
                         span.fa-stack.fa-4x
                             i.fas.fa-square.fa-stack-2x.text-primary
@@ -86,75 +89,116 @@ html(lang='en')
                             i.fas.fa-cheese.fa-stack-1x.fa-inverse
                         h4.my-3 Bites
                         p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                            | Now renounce your cravings with veriety of trufullo bites like some jars, pastry, teak cakes and many more.
+                .text-center
+                    a.btn.btn-outline-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#confectionery') Whats baking?
 
         // confectionery Grid
-        //- section#confectionery.page-section.bg-light
-        //-     .container
-        //-         .text-center
-        //-             h2.section-heading.text-uppercase confectionery
-        //-             h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-        //-         .row
-        //-             .col-lg-4.col-sm-6.mb-4
-        //-                 .confectionery-item
-        //-                     a.confectionery-link(data-toggle='modal', href='#confectioneryModal1')
-        //-                         .confectionery-hover
-        //-                             .confectionery-hover-content
-        //-                                 i.fas.fa-plus.fa-3x
-        //-                         img.img-fluid(src='assets/img/confectionery/01-thumbnail.jpg', alt='')
-        //-                     .confectionery-caption
-        //-                         .confectionery-caption-heading Threads
-        //-                         .confectionery-caption-subheading.text-muted Illustration
-        //-             .col-lg-4.col-sm-6.mb-4
-        //-                 .confectionery-item
-        //-                     a.confectionery-link(data-toggle='modal', href='#confectioneryModal2')
-        //-                         .confectionery-hover
-        //-                             .confectionery-hover-content
-        //-                                 i.fas.fa-plus.fa-3x
-        //-                         img.img-fluid(src='assets/img/confectionery/02-thumbnail.jpg', alt='')
-        //-                     .confectionery-caption
-        //-                         .confectionery-caption-heading Explore
-        //-                         .confectionery-caption-subheading.text-muted Graphic Design
-        //-             .col-lg-4.col-sm-6.mb-4
-        //-                 .confectionery-item
-        //-                     a.confectionery-link(data-toggle='modal', href='#confectioneryModal3')
-        //-                         .confectionery-hover
-        //-                             .confectionery-hover-content
-        //-                                 i.fas.fa-plus.fa-3x
-        //-                         img.img-fluid(src='assets/img/confectionery/03-thumbnail.jpg', alt='')
-        //-                     .confectionery-caption
-        //-                         .confectionery-caption-heading Finish
-        //-                         .confectionery-caption-subheading.text-muted Identity
-        //-             .col-lg-4.col-sm-6.mb-4.mb-lg-0
-        //-                 .confectionery-item
-        //-                     a.confectionery-link(data-toggle='modal', href='#confectioneryModal4')
-        //-                         .confectionery-hover
-        //-                             .confectionery-hover-content
-        //-                                 i.fas.fa-plus.fa-3x
-        //-                         img.img-fluid(src='assets/img/confectionery/04-thumbnail.jpg', alt='')
-        //-                     .confectionery-caption
-        //-                         .confectionery-caption-heading Lines
-        //-                         .confectionery-caption-subheading.text-muted Branding
-        //-             .col-lg-4.col-sm-6.mb-4.mb-sm-0
-        //-                 .confectionery-item
-        //-                     a.confectionery-link(data-toggle='modal', href='#confectioneryModal5')
-        //-                         .confectionery-hover
-        //-                             .confectionery-hover-content
-        //-                                 i.fas.fa-plus.fa-3x
-        //-                         img.img-fluid(src='assets/img/confectionery/05-thumbnail.jpg', alt='')
-        //-                     .confectionery-caption
-        //-                         .confectionery-caption-heading Southwest
-        //-                         .confectionery-caption-subheading.text-muted Website Design
-        //-             .col-lg-4.col-sm-6
-        //-                 .confectionery-item
-        //-                     a.confectionery-link(data-toggle='modal', href='#confectioneryModal6')
-        //-                         .confectionery-hover
-        //-                             .confectionery-hover-content
-        //-                                 i.fas.fa-plus.fa-3x
-        //-                         img.img-fluid(src='assets/img/confectionery/06-thumbnail.jpg', alt='')
-        //-                     .confectionery-caption
-        //-                         .confectionery-caption-heading Window
-        //-                         .confectionery-caption-subheading.text-muted Photography
+        section#confectionery.page-section.bg-light
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Confectionery
+                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+                .row
+                    .col-lg-6.col-sm-6.mb-4
+                        .confectionery-item
+                            .confectionery-caption
+                                .confectionery-caption-heading Confectionery Item 001
+                                .confectionery-caption-subheading.text-muted Discription Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+                                .confectionery-caption-subheading Price
+                    .col-lg-6.col-sm-6.mb-4
+                        .confectionery-item
+                            .confectionery-caption
+                                .confectionery-caption-heading Confectionery Item 001
+                                .confectionery-caption-subheading.text-muted Discription Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+                                .confectionery-caption-subheading Price
+                    .col-lg-6.col-sm-6.mb-4
+                        .confectionery-item
+                            .confectionery-caption
+                                .confectionery-caption-heading Confectionery Item 001
+                                .confectionery-caption-subheading.text-muted Discription Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+                                .confectionery-caption-subheading Price
+                    .col-lg-6.col-sm-6.mb-4
+                        .confectionery-item
+                            .confectionery-caption
+                                .confectionery-caption-heading Confectionery Item 001
+                                .confectionery-caption-subheading.text-muted Discription Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+                                .confectionery-caption-subheading Price
+                    .col-lg-6.col-sm-6.mb-4
+                        .confectionery-item
+                            .confectionery-caption
+                                .confectionery-caption-heading Confectionery Item 001
+                                .confectionery-caption-subheading.text-muted Discription Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+                                .confectionery-caption-subheading Price
+                    .col-lg-6.col-sm-6.mb-4
+                        .confectionery-item
+                            .confectionery-caption
+                                .confectionery-caption-heading Confectionery Item 001
+                                .confectionery-caption-subheading.text-muted Discription Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+                                .confectionery-caption-subheading Price
+                    .col-lg-6.col-sm-6.mb-4
+                        .confectionery-item
+                            .confectionery-caption
+                                .confectionery-caption-heading Confectionery Item 001
+                                .confectionery-caption-subheading.text-muted Discription Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+                                .confectionery-caption-subheading Price
+                    .col-lg-6.col-sm-6.mb-4
+                        .confectionery-item
+                            .confectionery-caption
+                                .confectionery-caption-heading Confectionery Item 001
+                                .confectionery-caption-subheading.text-muted Discription Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+                                .confectionery-caption-subheading Price
+                    .col-lg-6.col-sm-6.mb-4
+                        .confectionery-item
+                            .confectionery-caption
+                                .confectionery-caption-heading Confectionery Item 001
+                                .confectionery-caption-subheading.text-muted Discription Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+                                .confectionery-caption-subheading Price
+                    .col-lg-6.col-sm-6.mb-4
+                        .confectionery-item
+                            .confectionery-caption
+                                .confectionery-caption-heading Confectionery Item 001
+                                .confectionery-caption-subheading.text-muted Discription Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+                                .confectionery-caption-subheading Price
+                    .col-lg-6.col-sm-6.mb-4
+                        .confectionery-item
+                            .confectionery-caption
+                                .confectionery-caption-heading Confectionery Item 001
+                                .confectionery-caption-subheading.text-muted Discription Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+                                .confectionery-caption-subheading Price
+                    .col-lg-6.col-sm-6.mb-4
+                        .confectionery-item
+                            .confectionery-caption
+                                .confectionery-caption-heading Confectionery Item 001
+                                .confectionery-caption-subheading.text-muted Discription Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+                                .confectionery-caption-subheading Price
+                    .col-lg-6.col-sm-6.mb-4
+                        .confectionery-item
+                            .confectionery-caption
+                                .confectionery-caption-heading Confectionery Item 001
+                                .confectionery-caption-subheading.text-muted Discription Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+                                .confectionery-caption-subheading Price
+                    .col-lg-6.col-sm-6.mb-4
+                        .confectionery-item
+                            .confectionery-caption
+                                .confectionery-caption-heading Confectionery Item 001
+                                .confectionery-caption-subheading.text-muted Discription Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+                                .confectionery-caption-subheading Price
+                    .col-lg-6.col-sm-6.mb-4
+                        .confectionery-item
+                            .confectionery-caption
+                                .confectionery-caption-heading Confectionery Item 001
+                                .confectionery-caption-subheading.text-muted Discription Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+                                .confectionery-caption-subheading Price
+                    .col-lg-6.col-sm-6.mb-4
+                        .confectionery-item
+                            .confectionery-caption
+                                .confectionery-caption-heading Confectionery Item 001
+                                .confectionery-caption-subheading.text-muted Discription Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+                                .confectionery-caption-subheading Price
+                .text-center
+                    h3.section-subheading.text-muted NOTE* Additional charges will apply on customisation.
+                    
 
         // Team
         //- section#team.page-section.bg-light
@@ -401,6 +445,9 @@ html(lang='en')
         // Contact form JS
         script(src='assets/mail/jqBootstrapValidation.js')
         script(src='assets/mail/contact_me.js')
-
+        // Parallax JS
+        script(src='assets/js/parallax.js')
         // Core theme JS
         script(src='js/scripts.js')
+
+        

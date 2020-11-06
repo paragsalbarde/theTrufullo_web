@@ -41,6 +41,7 @@ Clone the source files of the theme and navigate into the theme's root directory
 - `npm run build:assets` copies the files in the `src/assets/` directory into `dist`
 - `npm run build:pug` compiles the Pug located in the `src/pug/` directory into `dist`
 - `npm run build:scripts` brings the `src/js/scripts.js` file into `dist`
+- `npm run build:parallax` brings the `src/js/parallax.js` file into `dist`
 - `npm run build:scss` compiles the SCSS files located in the `src/scss/` directory into `dist`
 - `npm run clean` deletes the `dist` directory to prepare for rebuilding the project
 - `npm run start:debug` runs the project in debug mode

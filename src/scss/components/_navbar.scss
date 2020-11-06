@@ -84,3 +84,39 @@
         }
     }
 }
+@include media-breakpoint-down(md) {
+    #mainNav {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border: none;
+        background-color: transparent;
+        transition: padding-top 0.3s ease-in-out,
+            padding-bottom 0.3s ease-in-out;
+        .navbar-brand {
+            // font-size: 1.5em;
+            font-size: 1.5em;
+            transition: font-size 0.3s ease-in-out;
+            img {
+                // height: 2rem;
+                height: 0rem;
+                transition: height 0.3s ease-in-out;
+            }
+        }
+        // Styling for when the navbar shrinks on larger screens
+        &.navbar-shrink {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            // background-color: $gray-900;
+            background-color: $white;
+            .navbar-brand {
+                font-size: 1.25em;
+                svg,
+                img {
+                    // height: 1.5rem;
+                    height: 2.5rem;
+                }
+            }
+        }
+        
+    }
+}

@@ -1,22 +1,24 @@
 // Global styling for this template
 body {
     overflow-x: hidden;
+    font-size: 0.85rem;
 }
 
 p {
-    line-height: 1.75;
+    line-height: 1.5;
 }
 
 .page-section {
-    padding: 6rem 0;
+    // padding: 6rem 0;
+    padding: 3rem 0;
     h2.section-heading {
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-family: $trufullo-font-family;
         margin-top: 0;
         margin-bottom: 1rem;
     }
     h3.section-subheading {
-        font-size: 1rem;
+        font-size: 0.85rem;
         font-weight: 400;
         font-style: italic;
         font-family: $subheadings-font-family;
